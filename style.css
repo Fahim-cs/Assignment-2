@@ -441,6 +441,190 @@
     padding: 25px;
   }
 }
+
+/* Host and vedio */
+.podcast-section {
+  background-color: #1A0B2E;
+  width: 100%;
+  padding: 80px 20px;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+
+
+.episodes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.episode-card {
+  background: #24123F;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.episode-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-wrapper {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #cfcfcf;
+  margin-bottom: 15px;
+}
+
+.duration {
+  color: #00ff88;
+  font-size: 14px;
+}
+
+
+
+.host-card {
+  background: #24123F;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.host-img img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.host-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.host-content p {
+  font-size: 14px;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+/* Footer*/
+
+.footer {
+  background: url("assets/footer-bg.png") no-repeat center center;
+  background-size: cover;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+
+
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: auto;
+}
+
+
+.footer-logo {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer-logo span {
+  background: linear-gradient(90deg, #FF00CC, #7A5FFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.footer-icons a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d3d3d3;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #ffffff;
+}
+
+.footer-icons img {
+  width: 18px;
+  height: 18px;
+}
+
+
+.copyright {
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+
 @media (max-width: 576px) {
 
  
@@ -593,7 +777,64 @@
   .card p {
     font-size: 14px;
   }
+  .episodes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
 }
+
+.host-card {
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.host-content p {
+  max-width: 100%;
+}
+
+.social-icons {
+  justify-content: center;
+}
+
+
+
+
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .episode-card {
+    border-radius: 18px;
+  }
+
+  .card-content h3 {
+    font-size: 19px;
+  }
+
+  .card-content p {
+    font-size: 15px;
+  }
+
+  .host-img img {
+    width: 200px;
+    height: 200px;
+  }
+  .footer-logo {
+    font-size: 34px;
+  }
+
+  .footer-icons {
+    gap: 20px;
+  }
+
+  .footer-icons a {
+    font-size: 13px;
+  }
+
+}
+
 
 
 
