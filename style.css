@@ -347,6 +347,100 @@
   color: #aaaaaa;
 }
 
+/* Layout */
+#why {
+  background: #230E3D;
+  padding: 100px 20px;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#why h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+
+.why-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+
+.premium {
+  background: #351165;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+
+.right-top {
+  display: grid;
+  gap: 30px;
+}
+
+
+.bottom-row {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr; 
+  gap: 30px;
+}
+
+
+.card {
+  background: #351165;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.card img {
+  width: 42px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cfcfcf;
+}
+
+
+@media (max-width: 992px) {
+  .why-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 576px) {
+  #why {
+    padding: 70px 15px;
+  }
+
+  #why h2 {
+    font-size: 26px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+}
 @media (max-width: 576px) {
 
  
@@ -460,6 +554,44 @@
 
   .stat-box p {
     font-size: 12px;
+  }
+   #why {
+    padding: 70px 15px;
+  }
+
+  #why h2 {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  
+  .why-wrapper {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  
+  .right-top {
+    grid-template-columns: 1fr;
+  }
+
+ 
+  .bottom-row {
+    grid-template-columns: 1fr;
+    grid-column: auto;
+  }
+
+  .card {
+    padding: 25px;
+    width: 100%;
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+
+  .card p {
+    font-size: 14px;
   }
 }
 
